@@ -61,7 +61,7 @@ def transcribe_file(filepath):
     transcript_path = os.path.join(
         app.config['TRANSCRIPTS_FOLDER'], transcript_filename)
     with open(transcript_path, 'w') as f:
-        f.write(transcript_with_timestamps)
+        f.write(srt_format_transcript)
     return transcript_filename
 
 
